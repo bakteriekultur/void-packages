@@ -1,0 +1,16 @@
+# Template file for 'SDRPlusPlus-nightly'
+pkgname=SDRPlusPlus-nightly
+version=1.2.1
+revision=1
+build_style=cmake
+configure_args="-DOPT_BUILD_PLUTOSDR_SOURCE=0"
+hostmakedepends="pkg-config"
+makedepends="fftw-devel glfw-devel volk-devel libzstd-devel glew-devel libusb-devel
+ librtlsdr-devel SoapySDR-devel libairspy-devel libairspyhf-devel libhackrf-devel
+ rtaudio-devel alsa-lib-devel pulseaudio-devel jack-devel"
+short_desc="Open source SDR software nightly release"
+maintainer="kultur <kultur-dev@protonmail.com>"
+license="GPL-3.0-only"
+homepage="https://github.com/AlexandreRouma/SDRPlusPlus"
+distfiles="https://github.com/AlexandreRouma/SDRPlusPlus/archive/refs/tags/nightly.tar.gz"
+checksum=19c957fdbcf34f902636edaf338111eeaf43e1d22323ecd38181320ba2ddcb14
